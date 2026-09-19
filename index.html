@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+  <nav>
+    <button onclick="location.href='temperature.html'">Temperature</button>
+    <button onclick="location.href='humidity.html'">Humidity</button>
+    <button onclick="location.href='uvindex.html'">UV Index</button>
+    <button onclick="location.href='windspeed.html'">Wind Speed</button>
+  </nav>
+
+  <header>
+    <h1>Welcome to my Weather App</h1>
+    <p>Enter a city to see its weather.</p>
+  </header>
+
+  <main>
+    <div class="input-container">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="submitBtn">Submit</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

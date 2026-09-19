@@ -1,0 +1,175 @@
+/* General Styles for All Pages */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures body fills viewport height */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh; /* Background covers full viewport */
+  background-size: cover; /* Image scales to fill the page */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* Stacks content vertically */
+}
+
+/* Home Page Styles */
+body.home {
+  background: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #004c99;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF7F50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+nav button:hover {
+  background-color: #FF4500;
+  transform: scale(1.05);
+}
+
+/* Temperature Page Styles */
+body.temperature {
+  background-image: url('images/temperature.jpg');
+  color: white; /* Ensures text is visible */
+}
+
+body.temperature header {
+  background-color: #b22222;
+  color: white;
+}
+
+body.temperature .icon-container {
+  background-color: #ffcccc;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Humidity Page Styles */
+body.humidity {
+  background-image: url('images/humidity.jpg');
+  color: white;
+}
+
+body.humidity header {
+  background-color: #004c99;
+  color: white;
+}
+
+body.humidity .icon-container {
+  background-color: #cceeff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* UV Index Page Styles */
+body.uvindex {
+  background-image: url('images/uvindex.jpg');
+  color: white;
+}
+
+body.uvindex header {
+  background-color: #ffa500;
+  color: white;
+}
+
+body.uvindex .icon-container {
+  background-color: #fff3cc;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Wind Speed Page Styles */
+body.windspeed {
+  background-image: url('images/windspeed.jpg');
+  color: white;
+}
+
+body.windspeed header {
+  background-color: #339933;
+  color: white;
+}
+
+body.windspeed .icon-container {
+  background-color: #d6f5d6;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Icon Styling Inside Rectangle */
+.icon-container i {
+  font-size: 6rem;
+  color: inherit; /* Uses dynamic page color */
+  margin-bottom: 15px;
+}
+
+/* Dynamic Icon Colors */
+.icon-blue { color: #1E90FF !important; }
+.icon-yellow { color: #FFD700 !important; }
+.icon-green { color: #32CD32 !important; }
+.icon-red { color: #FF4500 !important; }
+
+/* Text Styling Inside Rectangle */
+.icon-container p {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Toggle Button Styling for Temperature Page */
+#toggleTempBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #008CBA;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#toggleTempBtn:hover {
+  background-color: #005f73;
+  transform: scale(1.05);
+}
